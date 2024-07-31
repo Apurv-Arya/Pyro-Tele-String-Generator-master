@@ -1,5 +1,7 @@
-import env
+
 import logging
+
+from Config import *
 from pyrogram import Client, idle
 from pyromod import listen  # type: ignore
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
@@ -10,9 +12,9 @@ logging.basicConfig(
 
 app = Client(
     "bot",
-    api_id=env.API_ID,
-    api_hash=env.API_HASH,
-    bot_token=env.BOT_TOKEN,
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN,
     in_memory=True,
     plugins=dict(root="StringGenBot"),
 )
