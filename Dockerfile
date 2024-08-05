@@ -4,6 +4,7 @@ RUN apt-get install gcc -y
 RUN pip install -U tgcrypto
 COPY requirements.txt .
 
+RUN mkdir /app
 WORKDIR /app
 COPY . .
 
