@@ -3,10 +3,10 @@ RUN apt update && apt upgrade -y
 RUN apt-get install gcc -y
 RUN pip install -U tgcrypto
 
-WORKDIR /app
+WORKDIR /Pyro-Tele-String-Generator-master
 COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 
-CMD ["python3" , "src/bot.py"]
+CMD ["python3" , "/bot.py"]
