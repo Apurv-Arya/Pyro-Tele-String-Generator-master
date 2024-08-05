@@ -1,7 +1,7 @@
 FROM python:3.10.4-slim-buster
 
 WORKDIR /app
-COPY..
+COPY ..
 
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
