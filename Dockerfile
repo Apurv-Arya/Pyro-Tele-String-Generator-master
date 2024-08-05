@@ -1,6 +1,6 @@
 FROM python:3.10.4-slim-buster
 RUN apt update && apt upgrade -y
-RUN apt-get install gcc
+RUN apt-get install gcc -y
 RUN pip install -U tgcrypto
 RUN mkdir -p /home/app
 WORKDIR /home/app
