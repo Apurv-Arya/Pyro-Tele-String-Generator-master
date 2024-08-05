@@ -1,6 +1,5 @@
 FROM python:3.10.4-slim-buster
 RUN apt update && apt upgrade -y
-RUN python3 setup.py install
 
 RUN mkdir -p /home/app
 WORKDIR /home/app
